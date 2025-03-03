@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Survey</h1>
+    <form id="surveyForm">
+      <!-- Multiple Choice Questions -->
+      <div class="question">
+        <label>1. What do you enjoy doing in your free time?</label>
+        <input type="radio" name="q1" value="Creating things" /> Creating
+        things<br />
+        <input
+          type="radio"
+          name="q1"
+          value="Exploring the outdoors or staying active  
+        "
+        />
+        Exploring the outdoors or staying active
+        <br />
+        <input
+          type="radio"
+          name="q1"
+          value="Learning new skills or solving problems"
+        />
+        Learning new skills or solving problems<br />
+        <input
+          type="radio"
+          name="q1"
+          value="Socializing with friends or meeting new people"
+        />
+        Socializing with friends or meeting new people<br />
+      </div>
+
+      <div class="question">
+        <label>2. What type of activities energize you the most?</label>
+        <input
+          type="radio"
+          name="q2"
+          value="Quiet, solo activities that let you focus"
+        />
+        Quiet, solo activities that let you focus<br />
+        <input
+          type="radio"
+          name="q2"
+          value="Physical activities that get your heart pumping"
+        />
+        Physical activities that get your heart pumping<br />
+        <input
+          type="radio"
+          name="q2"
+          value="Mental challenges that make you think deeply"
+        />
+        Mental challenges that make you think deeply<br />
+        <input
+          type="radio"
+          name="q2"
+          value="Group activities that involve collaboration"
+        />
+        Group activities that involve collaboration<br />
+      </div>
+
+      <div class="question">
+        <label>3. What’s your ideal way to relax?</label>
+        <input
+          type="radio"
+          name="q3"
+          value="Curling up with a book, movie, or art project "
+        />
+        Curling up with a book, movie, or art project <br />
+        <input
+          type="radio"
+          name="q3"
+          value="Going for a hike, run, or bike ride "
+        />
+        Going for a hike, run, or bike ride <br />
+        <input
+          type="radio"
+          name="q3"
+          value="Playing games, puzzles, or researching something new  "
+        />
+        Playing games, puzzles, or researching something new <br />
+        <input
+          type="radio"
+          name="q3"
+          value="Hosting or attending a gathering with friends or family"
+        />
+        Hosting or attending a gathering with friends or family<br />
+      </div>
+
+      <div class="question">
+        <label
+          >4. What kind of events or activities do you look forward to?</label
+        >
+        <input
+          type="radio"
+          name="q4"
+          value="Art exhibits, concerts, or creative workshops"
+        />
+        Art exhibits, concerts, or creative workshops<br />
+        <input
+          type="radio"
+          name="q4"
+          value="Sports events, fitness classes, or outdoor adventures"
+        />
+        Sports events, fitness classes, or outdoor adventures<br />
+        <input
+          type="radio"
+          name="q4"
+          value="Trivia nights, escape rooms, or tech meetups "
+        />
+        Trivia nights, escape rooms, or tech meetups <br />
+        <input
+          type="radio"
+          name="q4"
+          value="Parties, festivals, or community events "
+        />
+        Parties, festivals, or community events <br />
+      </div>
+
+      <!-- Free Response Question -->
+      <div class="question">
+        <label
+          >5. If you had an entire day to yourself with no responsibilities, how
+          would you spend it? Be as specific as possible!</label
+        >
+        <textarea
+          name="q5"
+          placeholder="Enter your response here..."
+        ></textarea>
+      </div>
+
+      <!-- Submit Button -->
+      <button type="button" onclick="submitForm()">Submit</button>
+    </form>
+
+    <!-- Response Display -->
+    <div id="response"></div>
+
+    <!-- Link to your JavaScript file -->
+    <script src="script.js"></script>
+  </body>
+</html>
